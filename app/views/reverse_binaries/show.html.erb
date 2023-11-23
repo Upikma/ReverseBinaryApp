@@ -1,0 +1,24 @@
+<h1>ReverseBinaries#show</h1>
+<p>Find me in app/views/reverse_binaries/show.html.erb</p>
+<h2>Results</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Iteration</th>
+      <th>Decimal</th>
+      <th>Binary</th>
+      <th>Reversed Decimal</th>
+      <th>Reversed Binary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><%= @reverse_binary.reverse_binary[:decimal] %></td>
+      <td><%= @reverse_binary.reverse_binary[:binary] %></td>
+      <td><%= @reverse_binary.reverse_binary[:reversed_decimal] %></td>
+      <td><%= @reverse_binary.reverse_binary[:reversed_binary] %></td>
+    </tr>
+  </tbody>
+</table>
+<%= link_to 'Вернуться', root_path %>
